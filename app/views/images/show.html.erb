@@ -1,0 +1,12 @@
+<div class="product-image col-sm-12">
+  <div class="">
+    <%= link_to 'Delete', image_path(@image), method: :delete, data: { confirm: 'Are you sure?' } %>
+        <div class="header">
+          <h2> <%= @image.image_title %></h2>
+        </div>
+        <% if @image.image_url.present? %>
+          <%= image_tag(@image.image_url, class: "img-responsive img-zoom", data_zoom_image: @image.image_url, style: "width: 100%;") %>
+          <% cache @image do %>
+          <% end %> <!-- caching -->
+        <% end %>
+      </div><!--product-image-->

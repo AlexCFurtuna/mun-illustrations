@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+*= require 'masonry/transitions'
+*= require_tree .
+*= require_self
+*/
+
+
+@import 'bootstrap';
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+   background: #E9E9E9;
+    margin-bottom: 30px;
+}
+
+section {
+  margin-top: 150px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 100;
+}
+
+nav {
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+   li.navbar-brand {
+     list-style: none;
+   }
+   .navbar-brand {
+       a {
+           color: white;
+           font-weight: bold;
+           &:hover {
+               text-decoration: none;
+           }
+       }
+   }
+}
+
+
+#images {
+  margin: 0 auto;
+  width: 100%;
+  .box {
+     margin: 10px;
+     width: 250px;
+     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+     border-radius: 7px;
+     text-align: center;
+     img {
+       max-width: 100%;
+       height: auto;
+     }
+     h2 {
+       font-size: 22px;
+       margin: 0;
+       padding: 25px 10px;
+       a {
+               color: #474747;
+       }
+     }
+   }
+}
+
+
+textarea {
+   min-height: 250px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #9d9d9d;
+  background-color: #101010;
+  height: 40px;
+  line-height: 40px;
+    p {
+    margin-bottom: 0;
+  }
+}

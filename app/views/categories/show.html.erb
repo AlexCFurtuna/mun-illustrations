@@ -1,0 +1,15 @@
+<div class="">
+  <h2 class="text-center"><%= @category.name %> </h2>
+</div>
+<div class="">
+  <%= link_to 'New Image', new_image_path, class: "btn btn-primary" %>
+  <%= link_to "Edit Category", edit_category_path , class: "btn btn-primary pull-right" %>
+</div>
+<div class="transitions-enabled" id="images">
+  <% @images.each do |image| %>
+    <div class="box panel panel-default">
+      <%= link_to (image_tag image.image.url), image %>
+      <h2> <%= link_to image.image_title, image %> </h2>
+    </div>
+  <% end %>
+</div>
