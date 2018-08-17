@@ -21,17 +21,18 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to 'Home', root_path %></li>
-            <% @categoryNav.each do |category| %>
-              <li> <%= link_to category.name, category_path(category.id) %></li>
-            <% end %>
-
             <li> <%= link_to "About", static_pages_about_path %></li>
             <li> <%= link_to "Contact", static_pages_contact_path %></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exhibitions</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <% @categoryNav.each do |category| %>
+                   <li><%= link_to category.name, category_path(category.id) %></li>
+                <% end %>
+              </ul>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-
-
               <% if admin_signed_in? %>
               <li><%= link_to "Upload Image", upload_path %></li>
               <li> <%= link_to 'Add Exhibition', new_category_path %> </li>
@@ -42,14 +43,7 @@
               <% end %>
 
 
-            <!--<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>-->
+
           </ul>
           <!--<form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">

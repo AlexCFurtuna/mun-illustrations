@@ -40,6 +40,9 @@ class CategoriesController < ApplicationController
   end
 
   def destroy
+    @category = Category.find_by_id(params[:category_id])
+    @category.destroy
+
     @image = Image.find(params[:id])
     @image.destroy
 

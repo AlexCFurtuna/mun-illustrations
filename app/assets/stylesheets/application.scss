@@ -28,7 +28,7 @@ body {
 }
 
 section {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,6 +48,12 @@ nav {
                text-decoration: none;
            }
        }
+   }
+   .navbar-nav li .dropdown-menu {
+     background-color: black;
+   }
+   a {
+     color: white!important;
    }
 }
 
