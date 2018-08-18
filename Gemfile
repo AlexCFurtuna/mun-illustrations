@@ -21,6 +21,7 @@ gem 'masonry-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
+gem 'sprockets', '~> 3.7', '>= 3.7.2'
 
 
 group :development, :test do
