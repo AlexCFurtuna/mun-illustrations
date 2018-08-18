@@ -1,13 +1,13 @@
  /*landing*/
 section {
-  height: 900px;
+  min-height: 900px;
   width: 100%;
   background-image: url(/assets/one-landing.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  div.container.landing {
+  div.container {
     span {
       color: white;
     }
@@ -27,6 +27,9 @@ section {
         font-size: 2em;
         font-weight: lighter;
         letter-spacing: 1px;
+      }
+      .left-btn {
+        text-align: left;
       }
     }
     button:hover {

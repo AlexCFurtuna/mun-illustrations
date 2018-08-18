@@ -55,11 +55,15 @@ nav {
    a {
      color: white!important;
    }
+   .dropdown-menu > li > a:hover {
+     background-color: white;
+     color: black!important;
+   }
 }
 
 
 #images {
-  margin: 0 auto;
+  margin: 3em auto 3em auto;
   width: 100%;
   .box {
      margin: 10px;
