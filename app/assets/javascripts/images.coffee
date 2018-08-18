@@ -6,8 +6,3 @@ $ ->
      $('#images').masonry
        itemSelector: '.box'
        isFitWidth: true
-
-$(document).on 'turbolinks:load', ->
-  $('#images').hide()
-  $('#images').delay(500).fadeIn 1500
-  return
