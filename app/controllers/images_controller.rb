@@ -1,7 +1,7 @@
 class ImagesController < ApplicationController
   def new
-  @image = Image.new
-end
+    @image = Image.new
+  end
 
   def create
     @image = Image.new(image_params)
@@ -12,7 +12,6 @@ end
 
     else
       render 'new'
-
   end
 
   def destroy
