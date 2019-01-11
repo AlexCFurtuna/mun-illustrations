@@ -1,0 +1,15 @@
+current directory: /Users/alexfurtuna/Desktop/Rails/mun-illustrations/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/Users/alexfurtuna/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190111-19778-rvls94.rb extconf.rb
+creating Makefile
+
+current directory: /Users/alexfurtuna/Desktop/Rails/mun-illustrations/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/alexfurtuna/Desktop/Rails/mun-illustrations/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/alexfurtuna/Desktop/Rails/mun-illustrations/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20190111-19778-kjlq0g
