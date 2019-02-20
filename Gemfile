@@ -26,6 +26,8 @@ gem "rubyzip", ">= 1.2.2"
 gem "ffi", ">= 1.9.24"
 gem "rack", ">= 2.0.6"
 gem "loofah", ">= 2.2.3"
+gem 'mini_magick'
+gem 'fog-aws'
 
 
 group :development, :test do
