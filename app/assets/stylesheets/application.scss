@@ -103,3 +103,10 @@ footer {
     margin-bottom: 0;
   }
 }
+
+form#edit_admin.edit_admin div.form-group input#admin_email, input#admin_password, input#admin_password_confirmation, input#admin_current_password {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+}

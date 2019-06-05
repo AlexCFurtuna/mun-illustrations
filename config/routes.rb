@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, controllers: {
+    sessions: 'users/sessions'
+  }
   get 'static_pages/index'
 
   get 'static_pages/about'
@@ -8,23 +10,9 @@ Rails.application.routes.draw do
 
   get 'upload' => 'images#new', :as => 'upload'
 
-  get 'images/create'
+  resources :images
 
-  get 'images/destroy'
-
-  get 'images/index'
-
-  get 'categories/new'
-
-  get 'categories/create'
-
-  get 'categories/edit'
-
-  get 'categories/update'
-
-  get 'categories/destroy'
-
-  get 'categories/show'
+  resources :categories
 
   root 'static_pages#index'
 
