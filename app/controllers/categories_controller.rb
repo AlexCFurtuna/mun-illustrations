@@ -45,7 +45,7 @@ class CategoriesController < ApplicationController
 
     flash[:notice] = "Image deleted"
 
-    redirect_to images_path
+    redirect_to categories_path
   end
 
   def show
