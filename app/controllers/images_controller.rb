@@ -15,7 +15,7 @@ class ImagesController < ApplicationController
   end
 
   def destroy
-    @images = Image.find(params[:id])
+    @images = Images.find(params[:id])
     @image.destroy
 
     flash[:notice] = "Image deleted"
@@ -30,7 +30,7 @@ end
   end
 
   def show
-    @image = Image.find(params[:id])
+    @images = Image.find(params[:id])
   end
 
 

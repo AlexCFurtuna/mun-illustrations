@@ -1,7 +1,7 @@
 <div class="product-image col-sm-12">
   <div class="">
     <% if admin_signed_in? %>
-    <%= link_to 'Delete', images_destroy_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to "Delete", image_destroy_path(@image), class: "btn btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
     <% end %>
         <div class="header">
           <h2> <%= @image.image_title %></h2>
